@@ -1,0 +1,176 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+header {
+    background-color: #141414;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff2222;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff2222;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff2222;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(13, 13, 13, 1)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    color: #ff2222;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* CONTAINER DE PRODUTOS */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.titulo-secao {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-left: 5px solid #ff2222;
+    padding-left: 10px;
+}
+
+/* GRID E CARDS */
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-produto {
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #222;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    border-color: #ff2222;
+}
+
+.badge-desconto {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff2222;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.foto-produto {
+    background-color: #222;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-produto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.preco-antigo {
+    color: #777;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.preco-atual {
+    color: #22c55e; /* Verde para o preço */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #ff2222;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #cc1111;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
