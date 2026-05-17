@@ -3,76 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja Digital</title>
+    <title>Ruan-Store-Games | Serviços Digitais</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO / NAVBAR -->
     <header>
-        <div class="logo">LOJA<span>DIGITAL</span></div>
+        <div class="logo">RUAN-<span>STORE</span>-GAMES</div>
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Jogos</a>
-            <a href="#">Suporte</a>
+            <a href="#"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="#"><i class="fa-solid fa-gamepad"></i> Produtos</a>
+            <a href="https://wa.me/seu-numero" target="_blank"><i class="fa-brands fa-whatsapp"></i> Suporte</a>
         </nav>
     </header>
 
-    <!-- BANNER PRINCIPAL -->
     <section class="banner">
-        <h1>AS MELHORES OFERTAS DO MERCADO</h1>
-        <p>Entrega automática, rápida e com total segurança.</p>
+        <div class="banner-conteudo">
+            <div class="badges">
+                <span class="badge-verificado"><i class="fa-solid fa-shield-halved"></i> LOJA VERIFICADA</span>
+                <span class="badge-entrega"><i class="fa-solid fa-bolt"></i> ENTREGA AUTOMÁTICA</span>
+            </div>
+            <h1>Sua Loja de Confiança em <br><span>Serviços Digitais</span></h1>
+            <p>Os melhores preços do mercado com entrega imediata e segura via PIX.</p>
+            <a href="#produtos" class="btn-principal">Ver Catálogo <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
     </section>
 
-    <!-- SEÇÃO DE PRODUTOS -->
-    <main class="container">
-        <h2 class="titulo-secao">PRODUTOS EM DESTAQUE</h2>
+    <section class="Vantagens">
+        <div class="vantagem-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h3>Entrega Automática</h3>
+                <p>Comprou, recebeu no seu e-mail ou chat.</p>
+            </div>
+        </div>
+        <div class="vantagem-item">
+            <i class="fa-solid fa-lock"></i>
+            <div>
+                <h3>Pagamento Seguro</h3>
+                <p>Seus dados 100% protegidos via PIX.</p>
+            </div>
+        </div>
+        <div class="vantagem-item">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+                <h3>Suporte 24/7</h3>
+                <p>Atendimento rápido via WhatsApp e Discord.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container" id="produtos">
+        <h2 class="titulo-secao">Produtos em Destaque</h2>
         
         <div class="grid-produtos">
             
-            <!-- CARD PRODUTO 1 -->
             <div class="card-produto">
-                <div class="badge-desconto">-10%</div>
+                <div class="badge-desconto">PROMOÇÃO</div>
                 <div class="foto-produto">
-                    <!-- Aqui vai a imagem do produto depois -->
-                    <span style="color: #555;">[ IMAGEM DO JOGO ]</span>
+                    <i class="fa-solid fa-tv" style="font-size: 3rem; color: #ff2222;"></i>
                 </div>
-                <h3>Chave Aleatória Steam</h3>
-                <p class="preco-antigo">R$ 20,00</p>
-                <p class="preco-atual">R$ 18,00</p>
-                <button class="btn-comprar">Comprar Agora</button>
+                <h3>Streaming Premium 4K</h3>
+                <p class="descricao-curta">Acesso completo com garantia de 30 dias.</p>
+                <div class="precos">
+                    <span class="preco-antigo">R$ 35,00</span>
+                    <span class="preco-atual">R$ 14,90</span>
+                </div>
+                <button class="btn-comprar"><i class="fa-solid fa-cart-shopping"></i> Comprar Agora</button>
             </div>
 
-            <!-- CARD PRODUTO 2 -->
             <div class="card-produto">
-                <div class="badge-desconto">-20%</div>
+                <div class="badge-desconto">MAIS VENDIDO</div>
                 <div class="foto-produto">
-                    <span style="color: #555;">[ IMAGEM DO JOGO ]</span>
+                    <i class="fa-solid fa-key" style="font-size: 3rem; color: #ff2222;"></i>
                 </div>
-                <h3>Jogo Premium Key</h3>
-                <p class="preco-antigo">R$ 50,00</p>
-                <p class="preco-atual">R$ 40,00</p>
-                <button class="btn-comprar">Comprar Agora</button>
+                <h3>Steam Random Key Premium</h3>
+                <p class="descricao-curta">Chave aleatória contendo jogos AAA na Steam.</p>
+                <div class="precos">
+                    <span class="preco-antigo">R$ 15,00</span>
+                    <span class="preco-atual">R$ 5,00</span>
+                </div>
+                <button class="btn-comprar"><i class="fa-solid fa-cart-shopping"></i> Comprar Agora</button>
             </div>
 
-            <!-- CARD PRODUTO 3 -->
             <div class="card-produto">
-                <div class="badge-desconto">PROMO</div>
+                <div class="badge-desconto">OFERTA</div>
                 <div class="foto-produto">
-                    <span style="color: #555;">[ IMAGEM DO JOGO ]</span>
+                    <i class="fa-solid fa-cubes" style="font-size: 3rem; color: #ff2222;"></i>
                 </div>
-                <h3>Pacote Especial Virtual</h3>
-                <p class="preco-antigo">R$ 35,00</p>
-                <p class="preco-atual">R$ 29,90</p>
-                <button class="btn-comprar">Comprar Agora</button>
+                <h3>Moedas Virtuais / Robux</h3>
+                <p class="descricao-curta">Pacote de moedas digitais para seus jogos.</p>
+                <div class="precos">
+                    <span class="preco-antigo">R$ 60,00</span>
+                    <span class="preco-atual">R$ 45,00</span>
+                </div>
+                <button class="btn-comprar"><i class="fa-solid fa-cart-shopping"></i> Comprar Agora</button>
             </div>
 
         </div>
     </main>
 
-    <!-- RODAPÉ -->
     <footer>
-        <p>&copy; 2026 Loja Digital. Todos os direitos reservados.</p>
+        <p>&copy; 2026 <strong>Ruan-Store-Games</strong>. Todos os direitos reservados.</p>
+        <p style="font-size: 0.8rem; margin-top: 5px; color: #444;">Desenvolvido para alta performance.</p>
     </footer>
 
 </body>
